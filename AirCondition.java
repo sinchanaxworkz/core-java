@@ -1,4 +1,4 @@
-class Tv{
+class AirCondition{
    static boolean isConnected=false;
    static int currentVolume;
    static int minValue=0;
@@ -6,15 +6,9 @@ class Tv{
    public static boolean onOrOff(){
    
    System.out.println("Start of OnorOff");
-  /*  if(!isConnected) 
-	  isConnected=true; 
-   
-   else if(isConnected)
-	  isConnected=false; 
-*/
+ 
      isConnected= (isConnected==false) ? true:false;
-	 // ref=condition ? value1:value2;
-   
+	
    System.out.println("End of OnOrOff");
    return isConnected;
    }
@@ -32,7 +26,7 @@ class Tv{
 		   }
 	   }
 	   else{
-		   System.out.println("Connect the Tv");
+		   System.out.println("Connect the AirCondition");
 	   }
    }
    
@@ -49,7 +43,7 @@ class Tv{
 		   }
 	   }
 	   else{
-		   System.out.println("Connect the Tv");
+		   System.out.println("Connect the AirCondition");
 	   }
    }
 }

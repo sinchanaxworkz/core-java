@@ -1,11 +1,36 @@
 class WashingMachineRunner{
-	public static void main(String args[]){
-		System.out.println("Main Started");
-		boolean connect=WashingMachine.onOrOff();
-		System.out.println("isconnected :"+ connect);
-		connect=WashingMachine.onOrOff();
-		System.out.println("isconnected :"+ connect);
-		
-		System.out.println("Main Started");
-}
+  public static void main(String ws[]){
+  System.out.println("Main started");
+  
+  boolean connect=WashingMachine.onOrOff();
+  System.out.println("Is connected :"+ connect);
+  
+  WashingMachine.increaseVolume();
+  WashingMachine.increaseVolume();
+  WashingMachine.increaseVolume();
+  WashingMachine.increaseVolume();
+  WashingMachine.increaseVolume();
+  WashingMachine.increaseVolume();
+  WashingMachine.increaseVolume();
+  WashingMachine.increaseVolume();
+  
+  WashingMachine.increaseVolume();
+  WashingMachine.decreaseVolume();
+  WashingMachine.decreaseVolume();
+  WashingMachine.decreaseVolume();
+  WashingMachine.decreaseVolume();
+  WashingMachine.decreaseVolume();
+  WashingMachine.decreaseVolume();
+  WashingMachine.decreaseVolume();
+  WashingMachine.decreaseVolume();
+  
+  connect=WashingMachine.onOrOff();
+  System.out.println("Is connected :"+ connect);
+  WashingMachine.increaseVolume();
+  WashingMachine.decreaseVolume();
+  
+  
+  System.out.println("Main Ended");
+  }
+
 }
