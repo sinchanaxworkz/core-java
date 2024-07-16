@@ -1,84 +1,54 @@
 class SangeethaMobiles{
 
-public static double getMobilePriceByName(String MobileName){
+public static double getMobilePriceByName(String MobileName,int quantity){
 	 
 	 double MobilePrice = 0.0;
 	 System.out.println("getMobilePriceByName started");
 	 
-   if(MobileName == "Xiaomi"){
-    MobilePrice  = 6299.87;
-	return MobilePrice ;
-   }
+   if(MobileName == "Xiaomi")return MobilePrice = 6299.87*quantity;
+   
   
-  else if(MobileName == "Vivo"){
-    MobilePrice  = 7000.00;
-	return MobilePrice ;
-   }
+  else if(MobileName == "Vivo")return MobilePrice  = 7000.00*quantity;
   
-  else if(MobileName == " Samsung"){
-	  MobilePrice = 1500.0;
-	  return MobilePrice;
-   }
   
-  else if(MobileName == "Realme"){
-	  MobilePrice = 6699.09;
-	  return MobilePrice;
-  }
+  else if(MobileName == " Samsung")return MobilePrice = 1500.0*quantity;
+   
   
-  else if(MobileName == " OPPO"){
-	  MobilePrice = 134999.00;
-	  return MobilePrice;
-  }
+  else if(MobileName == "Realme") return MobilePrice = 6699.09*quantity;
   
-  else if(MobileName == "OnePlus"){
-	  MobilePrice = 70000.0;
-	  return MobilePrice;
-  }
   
-  else if(MobileName == " Huawei"){
-	  MobilePrice = 10000.0;
-	  return MobilePrice;
-  }
+  else if(MobileName == " OPPO")return MobilePrice = 134999.00*quantity;
   
-  else if(MobileName == " Google"){
-	  MobilePrice = 26000.0;
-	  return MobilePrice;
-  }
   
-  else if(MobileName == "Motorola"){
-	  MobilePrice = 9894.78;
-	  return MobilePrice;
-  }
+  else if(MobileName == "OnePlus")return MobilePrice = 70000.0*quantity;
   
-  else if(MobileName == "Lenovo"){
-	  MobilePrice = 3456.98;
-	  return MobilePrice;
-  }
   
-  else if(MobileName == "Asus") {
-	  MobilePrice = 3455.45;
-	  return MobilePrice;
-  }
+  else if(MobileName == " Huawei") return MobilePrice = 10000.0*quantity;
   
-  else if(MobileName == "Nokia"){
-	  MobilePrice = 3456.00;
-	  return MobilePrice;
-  }
   
-  else if(MobileName == "Sony"){
-	  MobilePrice = 1567.34;
-	  return MobilePrice;
-  }
+  else if(MobileName == " Google")return  MobilePrice = 26000.0*quantity;
   
-  else if(MobileName == "Nothing"){
-	  MobilePrice = 26000.00;
-	  return MobilePrice;
-  }
   
-  else if(MobileName == "oppoA16"){
-	  MobilePrice = 13000.0;
-	  return MobilePrice;
-  }
+  else if(MobileName == "Motorola")return MobilePrice = 9894.78*quantity;
+  
+  
+  else if(MobileName == "Lenovo") return  MobilePrice = 3456.98*quantity;
+  
+  
+  else if(MobileName == "Asus")return MobilePrice = 3455.45*quantity;
+  
+  
+  else if(MobileName == "Nokia") return MobilePrice = 3456.00*quantity;
+  
+  
+  else if(MobileName == "Sony") return  MobilePrice = 1567.34*quantity;
+  
+  
+  else if(MobileName == "Nothing") return MobilePrice = 26000.00*quantity;
+  
+  
+  else if(MobileName == "oppoA16")return MobilePrice = 13000.0*quantity;
+  
   
   else{
   System.out.println(MobileName + "Not found");

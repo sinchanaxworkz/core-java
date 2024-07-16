@@ -1,106 +1,65 @@
 class Pvr{
 
-public static double getMoviePriceByName(String movieName){
+public static double getMoviePriceByName(String movieName,int quantity){
 	 
 	 double moviePrice = 0.0;
 	 
     System.out.println("getMoviePriceByName started");
 	
 	
-	 if(movieName == "Avtar"){
-     moviePrice  = 300.87;
-	 return moviePrice ;
-   }
+	 if(movieName == "Avtar") return moviePrice= 300.87*quantity;
+   
   
-   else if(movieName == "titanic"){
-     moviePrice  = 9000.89;
-	 return moviePrice ;
-   }
+   else if(movieName == "titanic")return moviePrice= 9000.89*quantity ;
+   
   
-  else if(movieName == "inception"){
-	  moviePrice = 5349.09;
-	  return moviePrice;
-   }
+  else if(movieName == "inception")return moviePrice= 5349.09*quantity;
+     
+  else if(movieName == "Lovli")return moviePrice= 4396.09*quantity;
+   
+   
+  else if(movieName == "dark knignt")return moviePrice=3233.00*quantity;
   
-  else if(movieName == "Lovli"){
-	  moviePrice = 4396.09;
-	  return moviePrice;
-  }
   
-  else if(movieName == "dark knignt"){
-	  moviePrice = 367.98;
-	  return moviePrice;
-  }
+  else if(movieName == "Inside out") return moviePrice = 903.45*quantity;
   
-  else if(movieName == "Inside out"){
-	  moviePrice = 903.45;
-	  return moviePrice;
-  }
   
-  else if(movieName == "Lord of the ringd"){
-	  moviePrice =578.98;
-	  return moviePrice;
-  }
+  else if(movieName == "Lord of the ringd")return moviePrice =578.98*quantity;
   
-  else if(movieName == "the god father"){
-	  moviePrice = 944.09;
-	  return moviePrice;
-  }
   
-  else if(movieName == "sho"){
-	  moviePrice = 900.78;
-	  return moviePrice;
-  }
+  else if(movieName == "the god father")return moviePrice = 944.09*quantity;
   
-  else if(movieName == "fight club"){
-	  moviePrice = 377.98;
-	  return moviePrice;
-  }
   
-  else if(movieName == "the matrix") {
-	  moviePrice = 445.45;
-	  return moviePrice;
-  }
+  else if(movieName == "sho") return  moviePrice = 900.78*quantity;
   
-  else if(movieName == "star wars"){
-	  moviePrice = 334.56;
-	  return moviePrice;
-  }
   
-  else if(movieName == "the avengers "){
-	  moviePrice = 439.34;
-	  return moviePrice;
-  }
+  else if(movieName == "fight club")return moviePrice = 377.98*quantity;
+ 
   
-  else if(movieName == "family man"){
-	  moviePrice = 300.00;
-	  return moviePrice;
-  }
+  else if(movieName == "the matrix") return moviePrice = 445.45*quantity;
   
-  else if(movieName == "Animal"){
-	  moviePrice = 299.0;
-	  return moviePrice;
-  }
-  else if(movieName == "kalki"){
-    moviePrice  = 414.89;
-	return moviePrice ;
-   }
-   else if(movieName == "Arundathi"){
-    moviePrice  = 624.89;
-	return moviePrice ;
-   }
-   else if(movieName == "frozen"){
-    moviePrice  = 356.89;
-	return moviePrice ;
-   }
-   else if(movieName == "the nun"){
-    moviePrice  = 2005.89;
-	return moviePrice ;
-   }
-   else if(movieName == "forrest gump"){
-    moviePrice  =3233.89;
-	return moviePrice ;
-   }
+  
+  else if(movieName == "star wars")return  moviePrice = 334.56*quantity;
+  
+  
+  else if(movieName == "the avengers ")return moviePrice = 439.3*quantity4;
+  
+  
+  else if(movieName == "family man")return moviePrice = 300.00*quantity;
+  
+  
+  else if(movieName == "Animal")return moviePrice = 299.0*quantity;
+  
+  else if(movieName == "kalki")return moviePrice  = 414.89*quantity;
+   
+   else if(movieName == "Arundathi")return moviePrice  = 624.89*quantity;
+   
+   else if(movieName == "frozen")returnmoviePrice  = 356.89*quantity ;
+   
+   else if(movieName == "the nun")return moviePrice =400.0*quantity ;
+   
+   else if(movieName == "forrest gump")return moviePrice  =323.89 *quantity;
+   
   
  else{
   System.out.println(movieName + "Not found");

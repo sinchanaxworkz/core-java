@@ -4,7 +4,7 @@ class SangeethaMobilesRunner{
 	
   System.out.println("Main started");	
   String name = "oppoA16";
-  double price = SangeethaMobiles.getMobilePriceByName(name);
+  double price = SangeethaMobiles.getMobilePriceByName(name,2);
   System.out.println("The price for " + name + " is " + price);
   System.out.println("Main Ended");
   
