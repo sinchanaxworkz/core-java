@@ -1,47 +1,53 @@
 
 class AmazonRunner{
- public static void main(String[] products){
- 
-   boolean addedProduct = Amazon.addProductName("phones");
-   System.out.println("Added Product " + addedProduct );
-   
-   Amazon.addProductName("pen");
-   System.out.println("Added Product " + addedProduct );
-   
-   Amazon.addProductName("fan");
-   System.out.println("Added Product " + addedProduct );
-   
-   Amazon.addProductName("chair");
-   System.out.println("Added Product " + addedProduct );
-   
-   Amazon.addProductName("lipstick");
-   System.out.println("Added Product " + addedProduct );
-   
-   Amazon.addProductName("computer");
-   System.out.println("Added Product " + addedProduct );
-   
-   Amazon.addProductName("shampoo");
-   System.out.println("Added Product " + addedProduct );
-   
-   Amazon.addProductName("soap");
-   System.out.println("Added Product " + addedProduct );
-   
-   Amazon.addProductName("makep product");
-   System.out.println("Added Product " + addedProduct );
-   
-   Amazon.addProductName("Sandles");
-   System.out.println("Added Product " + addedProduct );
-   
-   Amazon.addProductName("saree");
-   System.out.println("Added Product " + addedProduct );
-   
-   
-   
-   Amazon.showProductNames();
- 
- }
-
-
-
-
+	public static void main(String[] args){
+		System.out.println("Main Started");
+		boolean produtAdded = Amazon.addProdutNames("Sunglasses");
+		System.out.println("Product names added " +produtAdded);
+		
+		produtAdded = Amazon.addProdutNames("Watch");
+		System.out.println("Product names added " +produtAdded);
+		
+		produtAdded = Amazon.addProdutNames("Airpods");
+		System.out.println("Product names added " +produtAdded);
+		
+		produtAdded = Amazon.addProdutNames("Moblie");
+		System.out.println("Product names added " +produtAdded);
+		
+		produtAdded = Amazon.addProdutNames("TV");
+		System.out.println("Product names added " +produtAdded);
+		
+		produtAdded = Amazon.addProdutNames("Kichen Items");
+		System.out.println("Product names added " +produtAdded);
+		
+		produtAdded = Amazon.addProdutNames("Charger");
+		System.out.println("Product names added " +produtAdded);
+		
+		produtAdded = Amazon.addProdutNames("Water Botell");
+		System.out.println("Product names added " +produtAdded);
+		
+		produtAdded = Amazon.addProdutNames("Laptop");
+		System.out.println("Product names added " +produtAdded);
+		
+		produtAdded = Amazon.addProdutNames("Mouse");
+		System.out.println("Product names added " +produtAdded);
+		
+		produtAdded = Amazon.addProdutNames("Printer");
+		System.out.println("Product names added " +produtAdded);
+		
+		Amazon.readProdutName();
+		
+		
+		boolean produtUpdate = Amazon.updateProdutName("Smart watch" , "Printer");
+		System.out.println("Product Name is updated" + produtUpdate);
+		
+		Amazon.readProdutName();
+		
+		boolean produtDelete = Amazon.deleteProdutName("Water Botell");
+		System.out.println("Product Name is Deleted" +produtDelete);
+		
+		Amazon.readProdutName();
+		System.out.println("Main Ended");
+	}
 }
+		

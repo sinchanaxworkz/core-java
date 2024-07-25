@@ -1,32 +1,39 @@
+
 class JuiceShopRunner{
- public static void main(String[] juice){
- 
-   boolean addedJuice = JuiceShop.addJuiceName("Lime");
-   System.out.println("Added juice" + addedJuice );
-   
-   JuiceShop.addJuiceName("chiku");
-   System.out.println("Added juice" + addedJuice );
-   
-   JuiceShop.addJuiceName("Mango");
-   System.out.println("Added juice" + addedJuice );
-   
-   JuiceShop.addJuiceName("Apple");
-   System.out.println("Added juice" + addedJuice );
-   
-   JuiceShop.addJuiceName("choclate");
-   System.out.println("Added juice" + addedJuice );
-   
-   JuiceShop.addJuiceName("bannana");
-   System.out.println("Added juice" + addedJuice );
-   
-   JuiceShop.addJuiceName("kiwi");
-   System.out.println("Added juice" + addedJuice );
-   
-   JuiceShop.showJuiceNames();
- 
- }
-
-
-
-
+	public static void main(String[] args){
+		System.out.println("Main Started");
+		boolean juiceAdded = JuiceShop.addJuiceName("orange juice");
+		System.out.println("Juice names added " +juiceAdded);
+		
+		juiceAdded = JuiceShop.addJuiceName("watermelon juice");
+		System.out.println("Juice names added " +juiceAdded);
+		
+		juiceAdded = JuiceShop.addJuiceName("mosambi juice");
+		System.out.println("Juice names added " +juiceAdded);
+		
+		juiceAdded = JuiceShop.addJuiceName("grape juice");
+		System.out.println("Juice names added " +juiceAdded);
+		
+		juiceAdded = JuiceShop.addJuiceName("pineapple juice");
+		System.out.println("Juice names added " +juiceAdded);
+		
+		juiceAdded = JuiceShop.addJuiceName("butterfruit juice");
+		System.out.println("Juice names added " +juiceAdded);
+		
+		juiceAdded = JuiceShop.addJuiceName("papaya juice");
+		System.out.println("Juice names added " +juiceAdded);
+		
+		JuiceShop.readJuiceName();
+		
+		boolean juiceUpdate = JuiceShop.updateJuiceName("Pomogranet juice" , "papaya juice");
+		System.out.println("Juice Name is updated" + juiceUpdate);
+		
+		JuiceShop.readJuiceName();
+		
+		boolean juiceDelete = JuiceShop.deleteJuiceName("orange juice");
+		System.out.println("Juice Name is Deleted" +juiceDelete);
+		
+		JuiceShop.readJuiceName();
+		System.out.println("Main Ended");
+	}
 }

@@ -1,51 +1,51 @@
 
 class TouristCompanyRunner{
- public static void main(String[] places){
- 
-   boolean addedPlace = TouristCompany.addTouristPlace("Dubai");
-   System.out.println("Added Places " + addedPlace );
-   
-   TouristCompany.addTouristPlace("newdehli");
-   System.out.println("Added Places " + addedPlace );
-   
-   TouristCompany.addTouristPlace("dharmasthala");
-   System.out.println("Added Places " + addedPlace );
-   
-   TouristCompany.addTouristPlace("Maharastra");
-   System.out.println("Added Places " + addedPlace );
-   
-   TouristCompany.addTouristPlace("newyork");
-   System.out.println("Added Places " + addedPlace );
-   
-   TouristCompany.addTouristPlace("south korea");
-   System.out.println("Added Places " + addedPlace );
-   
-   TouristCompany.addTouristPlace("Hyderbad");
-   System.out.println("Added Places " + addedPlace );
-   
-   TouristCompany.addTouristPlace("kolkata");
-   System.out.println("Added Places " + addedPlace );
-   
-   TouristCompany.addTouristPlace("Dubai");
-   System.out.println("Added Places " + addedPlace );
-   
-   TouristCompany.addTouristPlace("Kerla");
-   System.out.println("Added Places " + addedPlace );
-   
-   TouristCompany.addTouristPlace("Maldives");
-   System.out.println("Added Places " + addedPlace );
-   
-   TouristCompany.addTouristPlace("darjleeing");
-   System.out.println("Added Places " + addedPlace );
-  
-   
-   
-   
-   TouristCompany.showTouristNames();
- 
- }
-
-
-
-
+	public static void main(String[] args){
+		System.out.println("Main Started");
+		boolean touristPlaceNameAdded = TouristCompany.addtouristPlaceNames("Coorg");
+		System.out.println("Product names added " +touristPlaceNameAdded);
+		
+		touristPlaceNameAdded = TouristCompany.addtouristPlaceNames("Badami");
+		System.out.println("Product names added " +touristPlaceNameAdded);
+		
+		touristPlaceNameAdded = TouristCompany.addtouristPlaceNames("Mysuru");
+		System.out.println("Product names added " +touristPlaceNameAdded);
+		
+		touristPlaceNameAdded = TouristCompany.addtouristPlaceNames("Hampi");
+		System.out.println("Product names added " +touristPlaceNameAdded);
+		
+		touristPlaceNameAdded = TouristCompany.addtouristPlaceNames(" Gokarna");
+		System.out.println("Product names added " +touristPlaceNameAdded);
+		
+		touristPlaceNameAdded = TouristCompany.addtouristPlaceNames("Udupi");
+		System.out.println("Product names added " +touristPlaceNameAdded);
+		
+		touristPlaceNameAdded = TouristCompany.addtouristPlaceNames(" Chikmagalur");
+		System.out.println("Product names added " +touristPlaceNameAdded);
+		
+		touristPlaceNameAdded = TouristCompany.addtouristPlaceNames("Jog Falls");
+		System.out.println("Product names added " +touristPlaceNameAdded);
+		
+		touristPlaceNameAdded = TouristCompany.addtouristPlaceNames("Murudeshwar");
+		System.out.println("Product names added " +touristPlaceNameAdded);
+		
+		touristPlaceNameAdded = TouristCompany.addtouristPlaceNames("Bangalore");
+		System.out.println("Product names added " +touristPlaceNameAdded);
+		
+		touristPlaceNameAdded = TouristCompany.addtouristPlaceNames("Mandya");
+		System.out.println("Product names added " +touristPlaceNameAdded);
+		
+		TouristCompany.readtouristPlaceNames();
+		
+		boolean touristPlaceNameUpdate = TouristCompany.updateTouristPlaceName("kashmir" , "Bangalore");
+		System.out.println("Tourist Place Name is updated" + touristPlaceNameUpdate);
+		
+		TouristCompany.readtouristPlaceNames();
+		
+		boolean touristPlaceNameDelete = TouristCompany.deleteTouristPlaceName("Badami");
+		System.out.println("Tourist Place Name is Deleted" +touristPlaceNameDelete);
+		
+		TouristCompany.readtouristPlaceNames();
+		System.out.println("Main Ended");
+	}
 }

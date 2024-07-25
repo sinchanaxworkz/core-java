@@ -1,47 +1,35 @@
+
 class MrpStoreRunner{
- public static void main(String[] items){
- 
-   boolean addedProduct = MrpStore.addAlcoholName("Whiskey");
-   System.out.println("Added Alcohol " + addedProduct );
-   
-   MrpStore.addAlcoholName("Vodka");
-   System.out.println("Added Alcohol " + addedProduct );
-   
-   MrpStore.addAlcoholName("Rum");
-   System.out.println("Added Alcohol " + addedProduct );
-   
-   MrpStore.addAlcoholName("Gin");
-   System.out.println("Added Alcohol " + addedProduct );
-   
-   MrpStore.addAlcoholName("Tequila");
-   System.out.println("Added Alcohol " + addedProduct );
-   
-   MrpStore.addAlcoholName("Beer");
-   System.out.println("Added Alcohol " + addedProduct );
-   
-   MrpStore.addAlcoholName("Wine");
-   System.out.println("Added Alcohol " + addedProduct );
-   
-   MrpStore.addAlcoholName("Champagne");
-   System.out.println("Added Alcohol " + addedProduct );
-   
-   MrpStore.addAlcoholName("Sake");
-   System.out.println("Added Alcohol " + addedProduct );
-   
-   MrpStore.addAlcoholName("Brandy");
-   System.out.println("Added Alcohol " + addedProduct );
-   
-   MrpStore.addAlcoholName("Absinthe");
-   System.out.println("Added Alcohol " + addedProduct );
-   
-  
 
-   
-   MrpStore.showAlcoholNames();
- 
- }
-
-
-
-
+	public static void main(String[] Brand){
+		System.out.println("main started");
+		
+		boolean isBrandNameAdded = MrpStore.addBrandName("Kingfisher");
+				isBrandNameAdded = MrpStore.addBrandName("Royal Challenge");
+				isBrandNameAdded = MrpStore.addBrandName("Old Monk");
+				isBrandNameAdded = MrpStore.addBrandName("Signature");
+				isBrandNameAdded = MrpStore.addBrandName("Royal Stag");
+				isBrandNameAdded = MrpStore.addBrandName("Bacardi");
+				isBrandNameAdded = MrpStore.addBrandName("Tuborg");
+				isBrandNameAdded = MrpStore.addBrandName("Blenders");
+				isBrandNameAdded = MrpStore.addBrandName("Sula Vineyaeds");
+				isBrandNameAdded = MrpStore.addBrandName("McDowell's No.1 ");
+		if(!isBrandNameAdded){
+			
+			MrpStore.printBrandNames();
+		}
+		else
+			System.out.println("Brand name could not be added");
+		boolean isBrandNameUpdated = MrpStore.updateBrandName("Tuborg", "Imperial Blue");
+		if(!isBrandNameUpdated){
+			
+			MrpStore.printBrandNames();
+		}
+		else
+			System.out.println("Brand name could not be updated");
+		boolean isBrandNameDeleted = MrpStore.deleteBrandName("Signature");
+			MrpStore.printBrandNames();
+		
+		System.out.println("main started");		
+	}
 }
