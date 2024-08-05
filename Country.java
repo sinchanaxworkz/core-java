@@ -1,4 +1,3 @@
-
 class Country{
 
     int countryId;
@@ -13,5 +12,14 @@ public Country( int countryId,int noOfStates,String primeMinister,String populat
 	this.noOfStates= noOfStates;
 	this.primeMinister=primeMinister;
 	 this.population= population;
+	
+}
+
+ public void displayInfo(){
+        System.out.println("Country generated");
+		System.out.println("Country Id of India is " + this.countryId);
+		System.out.println("Number of States in India is " + this.noOfStates);
+		System.out.println("Prime Minister in India is " + this.primeMinister);
+		System.out.println("Population in India is " + this.population);
 }
 }
