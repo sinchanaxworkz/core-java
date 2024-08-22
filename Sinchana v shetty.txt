@@ -1,0 +1,134 @@
+1)public static void main(String args[])
+  ->it is a main method in java here public means access specifier static is non access specifier void is return type main is a name of method string is a array
+
+2)class and object
+->class= it is a templet or structure it contains state and behavior 
+state represents the functionalities of 
+behavior it represent the method
+object= it is a instance of classs
+
+
+3)JDK: It is a component which is fully featured software development tools whic is used to provide a compile the java code
+   JVM + set of libraries +development tools
+
+ JRE: run time  is handled by JRE with the help of JVM
+  JRE=JVM is combined with set of libraries
+
+2)constructor->
+it is a special type of method with the same name of class  but no return type.
+types:
+parameter constructor=constructor with parameter
+default constructor= constructor with no parameter
+
+3)difference b/w this keywoed and this()
+   this keyword
+   this
+
+ 4)why main method is static  and explain the methods types?
+-> because it doesn't create any instance so main method is static
+   types of method
+     1)static method 
+     2)non-static method
+
+5)what do you know about java class loading?eplain java class loaders?
+ ->it load the java classes
+
+6)why we create reverse domain in package?
+because it is a industrial standards.
+
+
+7)write  a pgm to find a length of the arrays is present in given array ?
+ input:[12,3,2,45,6,7,6]
+o/p:7 length of the array is present in the given list.
+
+-->
+    class number{
+    public static void main(String[] ar) {
+        int[] arr = {12, 3, 2, 45, 6, 7, 6};
+        System.out.println("Length of the array is " + arr.length);
+    }
+}
+
+
+8)can we use instance variables inside the static method?
+No, you cannot use instance variables directly inside a static method in Java.
+
+Static methods belong to the class itself, not to any instance of the class. Instance variables, on the other hand, are tied to a specific instance of the class.
+
+
+9)explain polymorphism  with examples?
+    polymorphism :it is a object behaving class differently at given instance of class
+       parent ref = new child
+public class Engineer {
+    public void solvelProblems() {
+        System.out.println("engineer is used to solve the problems");
+
+    }
+}
+  
+
+
+
+class isengineer extends Engineer {
+    @Override
+    public void solveProblems() {
+        System.out.println("chemical engineer is used to solve the problems");
+
+    }
+}
+
+
+
+
+    class isengineerRunner {
+    public static void main(String[] args) {
+        Engineer engineer=new isEngineer();
+        engineer.solveProblems();
+    }
+}
+
+
+
+
+
+10)explain inheritance with example?
+     =>inheritance is process of acquiring the properties of one class to another
+
+public class Engineer {
+    public void solvelProblems() {
+        System.out.println("engineer is used to solve the problems");
+
+    }
+}
+  
+
+
+
+class isengineer extends Engineer {
+    @Override
+    public void solveProblems() {
+        System.out.println("chemical engineer is used to solve the problems");
+
+    }
+}
+
+
+
+
+    class isengineerRunner {
+    public static void main(String[] args) {
+        Engineer engineer=new isEngineer();
+        engineer.solveProblems();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+   
